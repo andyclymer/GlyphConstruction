@@ -490,7 +490,7 @@ class GlyphBuilderController(BaseWindowController):
         self.analyserSplit = Splitter((0, 0, -0, -statusBarHeight), paneDescriptions=paneDescriptions, drawBorderLine=False, isVertical=False, dividerThickness=1)
 
         paneDescriptions = [
-            dict(view=self.constructions, identifier="constructions", canCollapse=False, minSize=200, maxSize=600, liveResizeable=False),
+            dict(view=self.constructions, identifier="constructions", canCollapse=False, minSize=200, maxSize=1000, liveResizeable=False),
             dict(view=self.preview, identifier="preview", canCollapse=False, minSize=300, liveResizeable=True),
             dict(view=self.analyserSplit, identifier="analyser", canCollapse=True, minSize=100, maxSize=300, liveResizeable=False)
         ]
